@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using K4os.Compression.LZ4;
 using LiteNetLib;
+using LiteEntitySystem.Compatibility;
 using LiteEntitySystem.Internal;
 using LiteNetLib.Utils;
 
@@ -334,7 +335,7 @@ namespace LiteEntitySystem
                     Logger.LogError($"Bad input from: {player.Id} - {player.Peer.EndPoint} invalid sequence");
                     return;
                 }
-                inputBuffer.InputHeader.LerpMsec = Math.Clamp(inputBuffer.InputHeader.LerpMsec, 0f, 1f);
+                inputBuffer.InputHeader.LerpMsec = MathUtils.Clamp(inputBuffer.InputHeader.LerpMsec, 0f, 1f);
                 
                 //decode delta
                 Span<byte> decodedData;

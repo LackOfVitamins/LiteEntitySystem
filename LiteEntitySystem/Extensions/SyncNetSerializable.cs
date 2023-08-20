@@ -62,7 +62,7 @@ namespace LiteEntitySystem.Extensions
 
         private void Init(ReadOnlySpan<byte> data)
         {
-            ushort origSize = BitConverter.ToUInt16(data);
+            ushort origSize = BitConverter.ToUInt16(data.ToArray(), 0);
             if (CompressionBuffer == null || CompressionBuffer.Length < origSize)
                 CompressionBuffer = new byte[origSize];
             LZ4Codec.Decode(data[2..], new Span<byte>(CompressionBuffer));

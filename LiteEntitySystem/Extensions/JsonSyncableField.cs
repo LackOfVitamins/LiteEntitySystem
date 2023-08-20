@@ -1,4 +1,4 @@
-﻿#if UNITY_2021_2_OR_NEWER
+﻿#if UNITY_2018_1_OR_NEWER
 using System;
 using System.Text;
 using K4os.Compression.LZ4;
@@ -59,7 +59,7 @@ namespace LiteEntitySystem.Extensions
 
         private void Init(ReadOnlySpan<byte> data)
         {
-            int origSize = BitConverter.ToInt32(data);
+            int origSize = BitConverter.ToInt32(data.ToArray(), 0);
             if (CompressionBuffer == null || CompressionBuffer.Length < origSize)
                 CompressionBuffer = new byte[origSize];
             LZ4Codec.Decode(data[4..], new Span<byte>(CompressionBuffer));

@@ -1,16 +1,28 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LiteEntitySystem", "LiteEntitySystem/LiteEntitySystem.csproj", "{7360A185-B509-43CB-AC8A-636044EBDBD3}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33529.622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LiteEntitySystem", "LiteEntitySystem\LiteEntitySystem.csproj", "{7360A185-B509-43CB-AC8A-636044EBDBD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
+		Unity|Any CPU = Unity|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{7360A185-B509-43CB-AC8A-636044EBDBD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7360A185-B509-43CB-AC8A-636044EBDBD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7360A185-B509-43CB-AC8A-636044EBDBD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7360A185-B509-43CB-AC8A-636044EBDBD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7360A185-B509-43CB-AC8A-636044EBDBD3}.Unity|Any CPU.ActiveCfg = Unity|Any CPU
+		{7360A185-B509-43CB-AC8A-636044EBDBD3}.Unity|Any CPU.Build.0 = Unity|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A338FD54-1A85-4A41-A1BB-1E5E9EC5B963}
 	EndGlobalSection
 EndGlobal
