@@ -1,7 +1,7 @@
 # LiteEntitySystem
-Pure C# HighLevel API for multiplayer games using .NET Standard 2.1
+Pure C# HighLevel API for multiplayer games using .NET Standard 2.0. This is a fork that targets .NET Standard 2.0 instead of 2.1.
 
-**Warning: there is some things "to do" and there is some known bugs, but because i use for my own games they will be fixed asap**
+When using the Unity build configuration, make sure you add refrences to `UnityEngine.dll`, `UnityEngine.CoreModule.dll` and `UnityEngine.JSONSerializeModule.dll`.
 
 [![Made in Ukraine](https://img.shields.io/badge/made_in-ukraine-ffd700.svg?labelColor=0057b7)](https://stand-with-ukraine.pp.ua)
 
@@ -13,9 +13,9 @@ Pure C# HighLevel API for multiplayer games using .NET Standard 2.1
 
 ## Features
 
-* .NET Standard 2.1 and pure C# (but with some IL magic)
-* Can be used with Unity (2021.2 and later), Godot, Monogame or just pure .net
-* Can be used for creation any multiplayer game (2d,3d,4d,...)
+* .NET Standard 2.0 and pure C# (but with some IL magic)
+* Can be used with Unity (2018.1 and later), Godot, Monogame or just pure .net
+* Can be used for creation any multiplayer game (2d, 3d, 4d, ...)
 * Works with Unity IL2CPP
 * No code generation
 * Epic speed
@@ -40,4 +40,4 @@ Pure C# HighLevel API for multiplayer games using .NET Standard 2.1
 * LZ4: https://github.com/MiloszKrajewski/K4os.Compression.LZ4
 
 ## Unity notes!!!
-* Always use library sources instead of precompiled DLL files ( because there are platform specific #ifdefs and workarounds for unity bugs )
+* Always use library sources instead of precompiled DLL files ( ecause there are platform specific #ifdefs and workarounds for unity bugs)

@@ -44,7 +44,7 @@ namespace LiteEntitySystem.Extensions
         
         private void SetNewString(ReadOnlySpan<byte> data)
         {
-            _string = Encoding.GetString(data);
+            _string = Encoding.GetString(data.ToArray());
         }
 
         protected override void OnSyncRequested()

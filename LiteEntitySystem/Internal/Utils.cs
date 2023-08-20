@@ -77,7 +77,7 @@ namespace LiteEntitySystem.Internal
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static ref U RefFieldValue<U>(object obj, int offset)
         {
-#if UNITY_2021_2_OR_NEWER
+#if UNITY_2018_1_OR_NEWER
             return ref RefMagic.RefFieldValueMono<U>(obj, offset);
 #else
             return ref RefMagic.RefFieldValueDotNet<U>(obj, offset + IntPtr.Size);

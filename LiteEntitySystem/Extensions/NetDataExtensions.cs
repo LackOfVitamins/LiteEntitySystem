@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
-#if UNITY_2021_2_OR_NEWER
+#if UNITY_2018_1_OR_NEWER
 using UnityEngine;
 #endif
 
@@ -48,7 +48,7 @@ namespace LiteNetLib.Utils
             return e;
         }
         
-#if UNITY_2021_2_OR_NEWER
+#if UNITY_2018_1_OR_NEWER
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static void Put(this NetDataWriter writer, Vector3 v)
         {
