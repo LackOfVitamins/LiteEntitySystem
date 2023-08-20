@@ -29,13 +29,13 @@
         <HintPath>ILPart\RefMagic.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine">
-        <HintPath>..\..\..\source\repos\SlimeRancherMP\ReferencedAssemblies\UnityEngine.dll</HintPath>
+        <HintPath>..\..\ReferencedAssemblies\UnityEngine.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine.CoreModule">
-        <HintPath>..\..\..\source\repos\SlimeRancherMP\ReferencedAssemblies\UnityEngine.CoreModule.dll</HintPath>
+        <HintPath>..\..\ReferencedAssemblies\UnityEngine.CoreModule.dll</HintPath>
       </Reference>
       <Reference Include="UnityEngine.JSONSerializeModule">
-        <HintPath>..\..\..\source\repos\SlimeRancherMP\ReferencedAssemblies\UnityEngine.JSONSerializeModule.dll</HintPath>
+        <HintPath>..\..\ReferencedAssemblies\UnityEngine.JSONSerializeModule.dll</HintPath>
       </Reference>
     </ItemGroup>
 
